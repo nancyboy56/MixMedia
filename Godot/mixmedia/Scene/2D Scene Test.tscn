@@ -1,14 +1,19 @@
 [gd_scene load_steps=4 format=3 uid="uid://dwv20kcmbwh7j"]
 
-[ext_resource type="Shader" path="res://Shader/UV.gdshader" id="1_5b6c8"]
-[ext_resource type="Texture2D" uid="uid://oee6ijf862mm" path="res://Texture/Texture 2.png" id="2_6eyxm"]
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_a7o5v"]
-shader = ExtResource("1_5b6c8")
-shader_parameter/blue = 0.0
+[ext_resource type="Material" uid="uid://bphqrug31a4e6" path="res://Material/Pink.tres" id="1_iw6wj"]
+[ext_resource type="Texture2D" uid="uid://cjf834wmd0o5p" path="res://Texture/icon.svg" id="2_fy5fm"]
+[ext_resource type="Material" uid="uid://bdh5k4mif4cwn" path="res://Material/UV.tres" id="3_7346a"]
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-material = SubResource("ShaderMaterial_a7o5v")
-texture = ExtResource("2_6eyxm")
+[node name="Pink" type="Sprite2D" parent="."]
+material = ExtResource("1_iw6wj")
+position = Vector2(77, 74)
+texture = ExtResource("2_fy5fm")
+
+[node name="UV" type="Sprite2D" parent="."]
+material = ExtResource("3_7346a")
+position = Vector2(222, 73)
+texture = ExtResource("2_fy5fm")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
