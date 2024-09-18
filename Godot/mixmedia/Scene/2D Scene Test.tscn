@@ -1,13 +1,14 @@
-[gd_scene load_steps=9 format=3 uid="uid://dwv20kcmbwh7j"]
+[gd_scene load_steps=10 format=3 uid="uid://dwv20kcmbwh7j"]
 
-[ext_resource type="Material" uid="uid://bphqrug31a4e6" path="res://Material/Pink.tres" id="1_iw6wj"]
+[ext_resource type="Material" uid="uid://bphqrug31a4e6" path="res://Material/Basic/Pink.tres" id="1_iw6wj"]
 [ext_resource type="Texture2D" uid="uid://oee6ijf862mm" path="res://Texture/Texture 2.png" id="2_6eyxm"]
 [ext_resource type="Texture2D" uid="uid://cjf834wmd0o5p" path="res://Texture/icon.svg" id="2_fy5fm"]
-[ext_resource type="Material" uid="uid://bdh5k4mif4cwn" path="res://Material/UV.tres" id="3_7346a"]
-[ext_resource type="Material" uid="uid://b1po4jl2mopb0" path="res://Material/UV Blue.tres" id="4_u3t00"]
-[ext_resource type="Material" uid="uid://dtf2ogoriifh3" path="res://Material/Texture.tres" id="5_dwj7n"]
-[ext_resource type="Material" uid="uid://begjtxde2akdp" path="res://Material/Texture Blue.tres" id="7_8kts3"]
-[ext_resource type="Material" uid="uid://dbauikgpyw0y2" path="res://Material/Texture Monochrome.tres" id="8_7t2rh"]
+[ext_resource type="Material" uid="uid://bdh5k4mif4cwn" path="res://Material/Basic/UV.tres" id="3_7346a"]
+[ext_resource type="Material" uid="uid://b1po4jl2mopb0" path="res://Material/Basic/UV Blue.tres" id="4_u3t00"]
+[ext_resource type="Material" uid="uid://dtf2ogoriifh3" path="res://Material/Purple Texture/Texture.tres" id="5_dwj7n"]
+[ext_resource type="Material" uid="uid://begjtxde2akdp" path="res://Material/Purple Texture/Texture Blue.tres" id="7_8kts3"]
+[ext_resource type="Material" uid="uid://dbauikgpyw0y2" path="res://Material/Purple Texture/Monochrome.tres" id="8_7t2rh"]
+[ext_resource type="Material" uid="uid://bnpa7tkn3cm6s" path="res://Material/Purple Texture/Discard.tres" id="9_o7ah0"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -50,8 +51,8 @@ position = Vector2(876, 125)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("2_6eyxm")
 
-[node name="Alpha" type="Sprite2D" parent="."]
-material = ExtResource("8_7t2rh")
+[node name="Discard" type="Sprite2D" parent="."]
+material = ExtResource("9_o7ah0")
 position = Vector2(1042, 125)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("2_6eyxm")

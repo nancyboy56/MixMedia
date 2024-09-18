@@ -1,6 +1,6 @@
 [gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://b1po4jl2mopb0"]
 
-[ext_resource type="Shader" path="res://Shader/UV Blue Input.gdshader" id="1_mdd7a"]
+[ext_resource type="Shader" path="res://Shader/Basic/UV Blue Input.gdshader" id="1_mdd7a"]
 
 [resource]
 shader = ExtResource("1_mdd7a")

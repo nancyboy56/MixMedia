@@ -1,6 +1,6 @@
 [gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://begjtxde2akdp"]
 
-[ext_resource type="Shader" path="res://Shader/Texture Blue.gdshader" id="1_bsip8"]
+[ext_resource type="Shader" path="res://Shader/Purple Shader/Texture Blue.gdshader" id="1_bsip8"]
 
 [resource]
 shader = ExtResource("1_bsip8")

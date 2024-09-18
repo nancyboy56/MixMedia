@@ -1,6 +1,6 @@
 [gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://dbauikgpyw0y2"]
 
-[ext_resource type="Shader" path="res://Shader/Texture Monochrome.gdshader" id="1_p01o1"]
+[ext_resource type="Shader" path="res://Shader/Purple Shader/Texture Monochrome.gdshader" id="1_p01o1"]
 
 [resource]
 shader = ExtResource("1_p01o1")
