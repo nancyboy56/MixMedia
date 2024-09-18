@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://dwv20kcmbwh7j"]
+[gd_scene load_steps=18 format=3 uid="uid://dwv20kcmbwh7j"]
 
 [ext_resource type="Material" uid="uid://bphqrug31a4e6" path="res://Material/Basic/Pink.tres" id="1_iw6wj"]
 [ext_resource type="Texture2D" uid="uid://oee6ijf862mm" path="res://Texture/Texture 2.png" id="2_6eyxm"]
@@ -13,6 +13,7 @@
 [ext_resource type="Material" uid="uid://i0uw5u1k7wbp" path="res://Material/Purple Texture/Alpha.tres" id="10_4ne68"]
 [ext_resource type="Material" uid="uid://t7fg632onkra" path="res://Material/Purple Texture/Alpha Strength.tres" id="10_r5t00"]
 [ext_resource type="Texture2D" uid="uid://cwo8biqdewrwd" path="res://Texture/Green 1.png" id="13_65teo"]
+[ext_resource type="Material" uid="uid://cax5l7al07g3h" path="res://Material/Purple Texture/Swizzling.tres" id="13_lb625"]
 [ext_resource type="Material" uid="uid://4pymk12rasuk" path="res://Material/Greens/Analog Greenscreen.tres" id="14_bytei"]
 [ext_resource type="Material" uid="uid://c66pidx80i2pp" path="res://Material/Greens/Green Alpha.tres" id="15_836oh"]
 [ext_resource type="Texture2D" uid="uid://bq3h87boxhkw3" path="res://Texture/Green with Colour.png" id="15_pj0qw"]
@@ -95,6 +96,12 @@ texture = ExtResource("2_6eyxm")
 [node name="Alpha Strength" type="Sprite2D" parent="Purple Textures"]
 material = ExtResource("10_r5t00")
 position = Vector2(1436, 126)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_6eyxm")
+
+[node name="Alpha Strength4" type="Sprite2D" parent="Purple Textures"]
+material = ExtResource("13_lb625")
+position = Vector2(1908, 126)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("2_6eyxm")
 
