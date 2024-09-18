@@ -14,7 +14,7 @@ void fragment() {
 	
 	float alpha = colourStrength * (COLOR.r + COLOR.b) - greenStrength * COLOR.g;
 	
-	COLOR = vec4(COLOR.r, min(COLOR.g, COLOR.b) COLOUR.b), alpha);
+	COLOR = vec4(COLOR.r, min(COLOR.g, COLOR.b), COLOR.b, alpha);
 	
 }
 

@@ -13,8 +13,8 @@
 [ext_resource type="Material" uid="uid://i0uw5u1k7wbp" path="res://Material/Purple Texture/Alpha.tres" id="10_4ne68"]
 [ext_resource type="Material" uid="uid://t7fg632onkra" path="res://Material/Purple Texture/Alpha Strength.tres" id="10_r5t00"]
 [ext_resource type="Texture2D" uid="uid://cwo8biqdewrwd" path="res://Texture/Green 1.png" id="13_65teo"]
-[ext_resource type="Material" uid="uid://4pymk12rasuk" path="res://Material/Greens/Greenscreen 1.tres" id="14_bytei"]
-[ext_resource type="Material" uid="uid://c66pidx80i2pp" path="res://Material/Greens/My green screen.tres" id="15_836oh"]
+[ext_resource type="Material" uid="uid://4pymk12rasuk" path="res://Material/Greens/Analog Greenscreen.tres" id="14_bytei"]
+[ext_resource type="Material" uid="uid://c66pidx80i2pp" path="res://Material/Greens/Green Alpha.tres" id="15_836oh"]
 [ext_resource type="Texture2D" uid="uid://bq3h87boxhkw3" path="res://Texture/Green with Colour.png" id="15_pj0qw"]
 
 [node name="Shader Scene" type="Node2D"]
@@ -114,30 +114,44 @@ texture = ExtResource("2_6eyxm")
 
 [node name="Greens" type="Node2D" parent="."]
 
-[node name="Green Pattern" type="Sprite2D" parent="Greens"]
+[node name="Patterns" type="Node2D" parent="Greens"]
+
+[node name="Green Pattern" type="Sprite2D" parent="Greens/Patterns"]
 position = Vector2(101, 577)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("13_65teo")
 
-[node name="Greenscreen Basic" type="Sprite2D" parent="Greens"]
+[node name="Green Colour3" type="Sprite2D" parent="Greens/Patterns"]
+material = ExtResource("5_dwj7n")
+position = Vector2(312, 576)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("15_pj0qw")
+
+[node name="Analog greenscreen" type="Node2D" parent="Greens"]
+position = Vector2(206, 0)
+
+[node name="Green Black" type="Sprite2D" parent="Greens/Analog greenscreen"]
 material = ExtResource("14_bytei")
 position = Vector2(313, 577)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("13_65teo")
 
-[node name="Greenscreen Basic2" type="Sprite2D" parent="Greens"]
-material = ExtResource("15_836oh")
-position = Vector2(975, 577)
-scale = Vector2(0.2, 0.2)
-texture = ExtResource("13_65teo")
-
-[node name="Green Colour" type="Sprite2D" parent="Greens"]
+[node name="Green Colour" type="Sprite2D" parent="Greens/Analog greenscreen"]
 material = ExtResource("14_bytei")
 position = Vector2(543, 577)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("15_pj0qw")
 
-[node name="Green Colour2" type="Sprite2D" parent="Greens"]
+[node name="Green Alpha" type="Node2D" parent="Greens"]
+position = Vector2(207, 3)
+
+[node name="Green Black" type="Sprite2D" parent="Greens/Green Alpha"]
+material = ExtResource("15_836oh")
+position = Vector2(975, 577)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("13_65teo")
+
+[node name="Green Colour" type="Sprite2D" parent="Greens/Green Alpha"]
 material = ExtResource("15_836oh")
 position = Vector2(742, 579)
 scale = Vector2(0.2, 0.2)
