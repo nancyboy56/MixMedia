@@ -5,6 +5,7 @@
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_a7o5v"]
 shader = ExtResource("1_5b6c8")
+shader_parameter/blue = 0.0
 
 [node name="Node2D" type="Node2D"]
 
