@@ -1,0 +1,7 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://b1po4jl2mopb0"]
+
+[ext_resource type="Shader" path="res://Shader/UV.gdshader" id="1_daxmh"]
+
+[resource]
+shader = ExtResource("1_daxmh")
+shader_parameter/blue = 0.0
