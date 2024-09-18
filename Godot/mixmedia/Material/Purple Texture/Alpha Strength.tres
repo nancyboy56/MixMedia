@@ -1,0 +1,7 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://t7fg632onkra"]
+
+[ext_resource type="Shader" path="res://Shader/Purple Shader/Alpha.gdshader" id="1_smvvg"]
+
+[resource]
+shader = ExtResource("1_smvvg")
+shader_parameter/strength = 0.5

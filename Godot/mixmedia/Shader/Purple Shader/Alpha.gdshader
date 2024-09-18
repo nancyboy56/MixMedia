@@ -1,5 +1,4 @@
 shader_type canvas_item;
-uniform float blue =1;
 uniform float strength =1;
 
 
@@ -16,7 +15,7 @@ void fragment() {
 
 	// just read from texture
 	
-	COLOR = vec4(COLOR.rgb, 1.0 - average *strength);
+	COLOR = vec4(COLOR.rgb, (1.0 - average) *strength);
 	
 }
 

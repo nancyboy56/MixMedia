@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://dwv20kcmbwh7j"]
+[gd_scene load_steps=12 format=3 uid="uid://dwv20kcmbwh7j"]
 
 [ext_resource type="Material" uid="uid://bphqrug31a4e6" path="res://Material/Basic/Pink.tres" id="1_iw6wj"]
 [ext_resource type="Texture2D" uid="uid://oee6ijf862mm" path="res://Texture/Texture 2.png" id="2_6eyxm"]
@@ -10,62 +10,78 @@
 [ext_resource type="Material" uid="uid://dbauikgpyw0y2" path="res://Material/Purple Texture/Monochrome.tres" id="8_7t2rh"]
 [ext_resource type="Material" uid="uid://bnpa7tkn3cm6s" path="res://Material/Purple Texture/Discard.tres" id="9_o7ah0"]
 [ext_resource type="Material" uid="uid://i0uw5u1k7wbp" path="res://Material/Purple Texture/Alpha.tres" id="10_4ne68"]
+[ext_resource type="Material" uid="uid://t7fg632onkra" path="res://Material/Purple Texture/Alpha Strength.tres" id="10_r5t00"]
 
-[node name="Node2D" type="Node2D"]
+[node name="Shader Scene" type="Node2D"]
 
-[node name="Pink" type="Sprite2D" parent="."]
+[node name="Basic Shaders" type="Node2D" parent="."]
+
+[node name="Pink" type="Sprite2D" parent="Basic Shaders"]
 material = ExtResource("1_iw6wj")
 position = Vector2(77, 74)
 texture = ExtResource("2_fy5fm")
 
-[node name="Background" type="Sprite2D" parent="."]
-z_index = -1
-material = ExtResource("1_iw6wj")
-position = Vector2(1267, 90)
-texture = ExtResource("2_fy5fm")
-
-[node name="UV" type="Sprite2D" parent="."]
+[node name="UV" type="Sprite2D" parent="Basic Shaders"]
 material = ExtResource("3_7346a")
 position = Vector2(222, 73)
 texture = ExtResource("2_fy5fm")
 
-[node name="UV Blue Input" type="Sprite2D" parent="."]
+[node name="UV Blue Input" type="Sprite2D" parent="Basic Shaders"]
 material = ExtResource("4_u3t00")
 position = Vector2(369, 72)
 texture = ExtResource("2_fy5fm")
 
-[node name="Purple Texture" type="Sprite2D" parent="."]
+[node name="Backgrounds" type="Node2D" parent="."]
+
+[node name="Pink Background" type="Sprite2D" parent="Backgrounds"]
+z_index = -1
+material = ExtResource("1_iw6wj")
+position = Vector2(756, 333)
+scale = Vector2(2, 2)
+texture = ExtResource("2_fy5fm")
+
+[node name="Off White" type="Sprite2D" parent="Backgrounds"]
+z_index = -1
+material = ExtResource("1_iw6wj")
+position = Vector2(1039, 333)
+scale = Vector2(2, 2)
+texture = ExtResource("2_fy5fm")
+
+[node name="Purple Textures" type="Node2D" parent="."]
+position = Vector2(-441, 212)
+
+[node name="Purple Texture" type="Sprite2D" parent="Purple Textures"]
 material = ExtResource("5_dwj7n")
 position = Vector2(528, 123)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("2_6eyxm")
 
-[node name="Texture Blue" type="Sprite2D" parent="."]
+[node name="Texture Blue" type="Sprite2D" parent="Purple Textures"]
 material = ExtResource("7_8kts3")
 position = Vector2(703, 124)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("2_6eyxm")
 
-[node name="Monochrome" type="Sprite2D" parent="."]
+[node name="Monochrome" type="Sprite2D" parent="Purple Textures"]
 material = ExtResource("8_7t2rh")
 position = Vector2(876, 125)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("2_6eyxm")
 
-[node name="Discard" type="Sprite2D" parent="."]
+[node name="Discard" type="Sprite2D" parent="Purple Textures"]
 material = ExtResource("9_o7ah0")
 position = Vector2(1042, 125)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("2_6eyxm")
 
-[node name="Discard3" type="Sprite2D" parent="."]
-material = ExtResource("9_o7ah0")
-position = Vector2(1042, 125)
+[node name="Alpha Strength" type="Sprite2D" parent="Purple Textures"]
+material = ExtResource("10_r5t00")
+position = Vector2(1436, 125)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("2_6eyxm")
 
-[node name="Alpha" type="Sprite2D" parent="."]
+[node name="Alpha" type="Sprite2D" parent="Purple Textures"]
 material = ExtResource("10_4ne68")
-position = Vector2(1237, 121)
+position = Vector2(1233, 126)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("2_6eyxm")
