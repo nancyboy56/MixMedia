@@ -101,7 +101,7 @@ texture = ExtResource("2_6eyxm")
 
 [node name="Alpha Strength4" type="Sprite2D" parent="Purple Textures"]
 material = ExtResource("13_lb625")
-position = Vector2(1908, 126)
+position = Vector2(1907, 125)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("2_6eyxm")
 

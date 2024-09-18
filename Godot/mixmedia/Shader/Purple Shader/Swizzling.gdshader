@@ -4,6 +4,7 @@ shader_type canvas_item;
 //cant be used in other functions
 varying vec3 some_light;
 
+group_uniforms groupz.groupiez;
 //can add hints to the shaders
 uniform vec4 color : source_color;
 uniform float amount : hint_range(0, 1);
