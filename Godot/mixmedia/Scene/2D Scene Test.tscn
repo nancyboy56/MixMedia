@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://dwv20kcmbwh7j"]
+[gd_scene load_steps=15 format=3 uid="uid://dwv20kcmbwh7j"]
 
 [ext_resource type="Material" uid="uid://bphqrug31a4e6" path="res://Material/Basic/Pink.tres" id="1_iw6wj"]
 [ext_resource type="Texture2D" uid="uid://oee6ijf862mm" path="res://Texture/Texture 2.png" id="2_6eyxm"]
@@ -13,6 +13,7 @@
 [ext_resource type="Material" uid="uid://i0uw5u1k7wbp" path="res://Material/Purple Texture/Alpha.tres" id="10_4ne68"]
 [ext_resource type="Material" uid="uid://t7fg632onkra" path="res://Material/Purple Texture/Alpha Strength.tres" id="10_r5t00"]
 [ext_resource type="Texture2D" uid="uid://cwo8biqdewrwd" path="res://Texture/Green 1.png" id="13_65teo"]
+[ext_resource type="Material" uid="uid://4pymk12rasuk" path="res://Material/Greens/Greenscreen 1.tres" id="14_bytei"]
 
 [node name="Shader Scene" type="Node2D"]
 
@@ -116,8 +117,8 @@ position = Vector2(101, 577)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("13_65teo")
 
-[node name="Green Alpha" type="Sprite2D" parent="Greens"]
-material = ExtResource("5_dwj7n")
-position = Vector2(101, 577)
+[node name="Greenscreen Basic" type="Sprite2D" parent="Greens"]
+material = ExtResource("14_bytei")
+position = Vector2(313, 577)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("13_65teo")

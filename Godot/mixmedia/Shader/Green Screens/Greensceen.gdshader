@@ -12,8 +12,8 @@ void fragment() {
 	COLOR = texture(TEXTURE, UV);
 	// Called for every pixel the material is visible on.
 	
-	float alpha = colourStrength * (COLOR.r +COLOR.b) - greenStrength * COLOR.g;
-	COLOR = vec4(COLOR.rgb,alpha);
+	float alpha = colourStrength * (COLOR.r + COLOR.b) - greenStrength * COLOR.g;
+	COLOR = vec4(alpha, alpha, alpha, 1);
 	
 }
 
