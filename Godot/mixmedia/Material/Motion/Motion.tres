@@ -4,4 +4,5 @@
 
 [resource]
 shader = ExtResource("1_dew7e")
-shader_parameter/speed = 102.0
+shader_parameter/circle = 38.097
+shader_parameter/scale = 0.526
