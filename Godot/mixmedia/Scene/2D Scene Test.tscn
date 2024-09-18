@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://dwv20kcmbwh7j"]
+[gd_scene load_steps=17 format=3 uid="uid://dwv20kcmbwh7j"]
 
 [ext_resource type="Material" uid="uid://bphqrug31a4e6" path="res://Material/Basic/Pink.tres" id="1_iw6wj"]
 [ext_resource type="Texture2D" uid="uid://oee6ijf862mm" path="res://Texture/Texture 2.png" id="2_6eyxm"]
@@ -14,6 +14,8 @@
 [ext_resource type="Material" uid="uid://t7fg632onkra" path="res://Material/Purple Texture/Alpha Strength.tres" id="10_r5t00"]
 [ext_resource type="Texture2D" uid="uid://cwo8biqdewrwd" path="res://Texture/Green 1.png" id="13_65teo"]
 [ext_resource type="Material" uid="uid://4pymk12rasuk" path="res://Material/Greens/Greenscreen 1.tres" id="14_bytei"]
+[ext_resource type="Material" uid="uid://c66pidx80i2pp" path="res://Material/Greens/My green screen.tres" id="15_836oh"]
+[ext_resource type="Texture2D" uid="uid://bq3h87boxhkw3" path="res://Texture/Green with Colour.png" id="15_pj0qw"]
 
 [node name="Shader Scene" type="Node2D"]
 
@@ -122,3 +124,21 @@ material = ExtResource("14_bytei")
 position = Vector2(313, 577)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("13_65teo")
+
+[node name="Greenscreen Basic2" type="Sprite2D" parent="Greens"]
+material = ExtResource("15_836oh")
+position = Vector2(975, 577)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("13_65teo")
+
+[node name="Green Colour" type="Sprite2D" parent="Greens"]
+material = ExtResource("14_bytei")
+position = Vector2(543, 577)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("15_pj0qw")
+
+[node name="Green Colour2" type="Sprite2D" parent="Greens"]
+material = ExtResource("15_836oh")
+position = Vector2(742, 579)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("15_pj0qw")

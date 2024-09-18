@@ -13,7 +13,8 @@ void fragment() {
 	// Called for every pixel the material is visible on.
 	
 	float alpha = colourStrength * (COLOR.r + COLOR.b) - greenStrength * COLOR.g;
-	COLOR = vec4(alpha, alpha, alpha, 1);
+	
+	COLOR = vec4(COLOR.r, min(COLOR.g, COLOR.b) COLOUR.b), alpha);
 	
 }
 
