@@ -1,5 +1,4 @@
 shader_type canvas_item;
-uniform float blue =0;
 
 void vertex() {
 	// Called for every vertex the material is visible on.

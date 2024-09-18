@@ -1,7 +1,7 @@
 [gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://b1po4jl2mopb0"]
 
-[ext_resource type="Shader" path="res://Shader/Basic/UV Blue Input.gdshader" id="1_mdd7a"]
+[ext_resource type="Shader" path="res://Shader/Basic/UV Blue Input.gdshader" id="1_sphf4"]
 
 [resource]
-shader = ExtResource("1_mdd7a")
-shader_parameter/blue = 0.5
+shader = ExtResource("1_sphf4")
+shader_parameter/blue = 0.49

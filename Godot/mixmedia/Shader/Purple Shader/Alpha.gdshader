@@ -1,6 +1,5 @@
 shader_type canvas_item;
-uniform float strength =1;
-
+uniform float strength: hint_range(0, 5) =1;
 
 
 void vertex() {

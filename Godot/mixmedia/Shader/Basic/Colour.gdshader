@@ -1,5 +1,5 @@
 shader_type canvas_item;
-uniform vec4 colour = vec4(1,1,1,1);
+uniform vec4 colour: source_color = vec4(1,1,1,1);
 
 
 void vertex() {

@@ -1,5 +1,4 @@
 shader_type canvas_item;
-uniform float greenStrength =1.0;
 
 struct hsv {
 	float hue;
@@ -38,7 +37,7 @@ void fragment() {
 	// Called for every pixel the material is visible on.
 	
 	float alpha = COLOR.g;
-	COLOR = vec4(COLOR.rgb,  1.0 - alpha *greenStrength);
+	//COLOR = vec4(COLOR.rgb,  1.0 - alpha *greenStrength);
 	
 }
 

@@ -1,6 +1,6 @@
 shader_type canvas_item;
-uniform float greenStrength =1.0;
-uniform float colourStrength =1.0;
+uniform float greenStrength : hint_range(0, 5) =1.0;
+uniform float colourStrength : hint_range(0, 5) =1.0;
 
 
 

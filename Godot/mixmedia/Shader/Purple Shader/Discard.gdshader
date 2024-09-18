@@ -1,6 +1,5 @@
 shader_type canvas_item;
-uniform float blue =1;
-uniform float threshold =0.9;
+uniform float threshold:hint_range(0, 1) =0.9;
 
 
 void vertex() {

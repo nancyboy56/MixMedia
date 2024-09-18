@@ -1,5 +1,5 @@
 shader_type canvas_item;
-uniform float blue =1;
+uniform float blue: hint_range(0, 1) =1;
 
 
 void vertex() {
