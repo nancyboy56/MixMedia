@@ -99,7 +99,7 @@ position = Vector2(1436, 126)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("2_6eyxm")
 
-[node name="Alpha Strength4" type="Sprite2D" parent="Purple Textures"]
+[node name="teal texture" type="Sprite2D" parent="Purple Textures"]
 material = ExtResource("13_lb625")
 position = Vector2(1907, 125)
 scale = Vector2(0.1, 0.1)
@@ -116,6 +116,12 @@ texture = ExtResource("2_6eyxm")
 material = ExtResource("10_r5t00")
 position = Vector2(1687, 137)
 rotation = 2.11496
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_6eyxm")
+
+[node name="teal texture2" type="Sprite2D" parent="Purple Textures"]
+material = ExtResource("13_lb625")
+position = Vector2(2091, 125)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("2_6eyxm")
 
