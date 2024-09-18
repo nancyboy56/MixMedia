@@ -4,3 +4,6 @@
 
 [resource]
 shader = ExtResource("1_xvltv")
+shader_parameter/color = null
+shader_parameter/amount = null
+shader_parameter/other_color = Color(1, 1, 1, 1)
