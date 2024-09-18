@@ -19,7 +19,11 @@ vec3 RGBtoHSV(vec3 rgb){
 	
 	
 	float redHue = mod((g-b)/c, 6.0); 
-	float greenHue =
+	float greenHue = (b-r)/c + 2.0;
+	float blueHue = (r-g)/c +4.0;
+	
+	float hue =0.0;
+	hue = redHue*float(maximum==r) + greenHue* float(maximum==g) + blueHue *float(maximum ==b);
 	//hue
 	
 	return hsvColour;
