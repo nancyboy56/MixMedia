@@ -1,0 +1,6 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://bsh4gq24lx0cy"]
+
+[ext_resource type="Shader" path="res://Shader/Pink Shader.gdshader" id="1_d8vij"]
+
+[resource]
+shader = ExtResource("1_d8vij")

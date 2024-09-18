@@ -1,7 +1,7 @@
 [gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://dbauikgpyw0y2"]
 
-[ext_resource type="Shader" path="res://Shader/Texture Blue.gdshader" id="1_ffikb"]
+[ext_resource type="Shader" path="res://Shader/Texture Monochrome.gdshader" id="1_p01o1"]
 
 [resource]
-shader = ExtResource("1_ffikb")
+shader = ExtResource("1_p01o1")
 shader_parameter/blue = 1.0

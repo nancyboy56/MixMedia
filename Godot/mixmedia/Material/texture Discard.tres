@@ -1,0 +1,7 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://bnpa7tkn3cm6s"]
+
+[ext_resource type="Shader" path="res://Shader/Texture Monochrome.gdshader" id="1_4grio"]
+
+[resource]
+shader = ExtResource("1_4grio")
+shader_parameter/blue = 1.0
