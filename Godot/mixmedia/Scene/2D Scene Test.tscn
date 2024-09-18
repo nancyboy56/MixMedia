@@ -36,3 +36,9 @@ material = ExtResource("7_8kts3")
 position = Vector2(703, 124)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("2_6eyxm")
+
+[node name="Texture Blue2" type="Sprite2D" parent="."]
+material = ExtResource("7_8kts3")
+position = Vector2(874, 123)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_6eyxm")
