@@ -1,5 +1,6 @@
 shader_type canvas_item;
-uniform float strength =1;
+uniform float greenStrength =1.0;
+uniform float colourStrength =1.0;
 
 
 
@@ -10,13 +11,9 @@ void vertex() {
 void fragment() {
 	COLOR = texture(TEXTURE, UV);
 	// Called for every pixel the material is visible on.
-	float average = (COLOR.r +COLOR.g + COLOR.b) / 3.0;
 	
-
-	// just read from texture
-	
-	
-	COLOR = vec4(COLOR.rgb,clamp((1.0 - average) * strength, 0.0, 1.0));
+	float alpha = colourStrength * (COLOR.r +COLOR.b) - greenStrength * COLOR.g;
+	COLOR = vec4(COLOR.rgb,alpha);
 	
 }
 
