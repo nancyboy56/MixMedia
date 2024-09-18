@@ -15,7 +15,8 @@ void fragment() {
 
 	// just read from texture
 	
-	COLOR = vec4(COLOR.rgb, (1.0 - average) *strength);
+	
+	COLOR = vec4(COLOR.rgb,clamp((1.0 - average) * strength, 0.0, 1.0));
 	
 }
 

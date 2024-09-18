@@ -1,7 +1,7 @@
 [gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://bsh4gq24lx0cy"]
 
-[ext_resource type="Shader" path="res://Shader/Basic/Colour.gdshader" id="1_0ipjj"]
+[ext_resource type="Shader" path="res://Shader/Basic/Colour.gdshader" id="1_6frlt"]
 
 [resource]
-shader = ExtResource("1_0ipjj")
-shader_parameter/colour = Vector4(1, 1, 1, 1)
+shader = ExtResource("1_6frlt")
+shader_parameter/colour = Vector4(1, 0.9, 0.9, 1)

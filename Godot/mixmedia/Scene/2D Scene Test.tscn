@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://dwv20kcmbwh7j"]
+[gd_scene load_steps=13 format=3 uid="uid://dwv20kcmbwh7j"]
 
 [ext_resource type="Material" uid="uid://bphqrug31a4e6" path="res://Material/Basic/Pink.tres" id="1_iw6wj"]
 [ext_resource type="Texture2D" uid="uid://oee6ijf862mm" path="res://Texture/Texture 2.png" id="2_6eyxm"]
@@ -6,6 +6,7 @@
 [ext_resource type="Material" uid="uid://bdh5k4mif4cwn" path="res://Material/Basic/UV.tres" id="3_7346a"]
 [ext_resource type="Material" uid="uid://b1po4jl2mopb0" path="res://Material/Basic/UV Blue.tres" id="4_u3t00"]
 [ext_resource type="Material" uid="uid://dtf2ogoriifh3" path="res://Material/Purple Texture/Texture.tres" id="5_dwj7n"]
+[ext_resource type="Material" uid="uid://bsh4gq24lx0cy" path="res://Material/Basic/Off White.tres" id="5_jpqjk"]
 [ext_resource type="Material" uid="uid://begjtxde2akdp" path="res://Material/Purple Texture/Texture Blue.tres" id="7_8kts3"]
 [ext_resource type="Material" uid="uid://dbauikgpyw0y2" path="res://Material/Purple Texture/Monochrome.tres" id="8_7t2rh"]
 [ext_resource type="Material" uid="uid://bnpa7tkn3cm6s" path="res://Material/Purple Texture/Discard.tres" id="9_o7ah0"]
@@ -42,7 +43,7 @@ texture = ExtResource("2_fy5fm")
 
 [node name="Off White" type="Sprite2D" parent="Backgrounds"]
 z_index = -1
-material = ExtResource("1_iw6wj")
+material = ExtResource("5_jpqjk")
 position = Vector2(1039, 333)
 scale = Vector2(2, 2)
 texture = ExtResource("2_fy5fm")
