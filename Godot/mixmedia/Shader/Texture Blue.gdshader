@@ -1,4 +1,6 @@
 shader_type canvas_item;
+uniform float blue =1;
+
 
 void vertex() {
 	// Called for every vertex the material is visible on.
@@ -9,6 +11,7 @@ void fragment() {
 	
 	// just read from texture
 	COLOR = texture(TEXTURE, UV);
+	COLOR.b = blue;
 	
 }
 

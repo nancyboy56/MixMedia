@@ -1,0 +1,7 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://dtf2ogoriifh3"]
+
+[ext_resource type="Shader" path="res://Shader/UV.gdshader" id="1_ctd3m"]
+
+[resource]
+shader = ExtResource("1_ctd3m")
+shader_parameter/blue = 0.0

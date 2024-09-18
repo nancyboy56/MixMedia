@@ -1,8 +1,12 @@
-[gd_scene load_steps=4 format=3 uid="uid://dwv20kcmbwh7j"]
+[gd_scene load_steps=8 format=3 uid="uid://dwv20kcmbwh7j"]
 
 [ext_resource type="Material" uid="uid://bphqrug31a4e6" path="res://Material/Pink.tres" id="1_iw6wj"]
+[ext_resource type="Texture2D" uid="uid://oee6ijf862mm" path="res://Texture/Texture 2.png" id="2_6eyxm"]
 [ext_resource type="Texture2D" uid="uid://cjf834wmd0o5p" path="res://Texture/icon.svg" id="2_fy5fm"]
 [ext_resource type="Material" uid="uid://bdh5k4mif4cwn" path="res://Material/UV.tres" id="3_7346a"]
+[ext_resource type="Material" uid="uid://b1po4jl2mopb0" path="res://Material/UV Blue.tres" id="4_u3t00"]
+[ext_resource type="Material" uid="uid://dtf2ogoriifh3" path="res://Material/Texture.tres" id="5_dwj7n"]
+[ext_resource type="Material" uid="uid://begjtxde2akdp" path="res://Material/Texture Blue.tres" id="7_8kts3"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -16,4 +20,19 @@ material = ExtResource("3_7346a")
 position = Vector2(222, 73)
 texture = ExtResource("2_fy5fm")
 
-[node name="Sprite2D2" type="Sprite2D" parent="."]
+[node name="UV Blue Input" type="Sprite2D" parent="."]
+material = ExtResource("4_u3t00")
+position = Vector2(369, 72)
+texture = ExtResource("2_fy5fm")
+
+[node name="Purple Texture" type="Sprite2D" parent="."]
+material = ExtResource("5_dwj7n")
+position = Vector2(528, 123)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_6eyxm")
+
+[node name="Texture Blue" type="Sprite2D" parent="."]
+material = ExtResource("7_8kts3")
+position = Vector2(703, 124)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_6eyxm")
