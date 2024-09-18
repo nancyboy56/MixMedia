@@ -75,14 +75,14 @@ position = Vector2(1042, 125)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("2_6eyxm")
 
-[node name="Alpha Strength" type="Sprite2D" parent="Purple Textures"]
-material = ExtResource("10_r5t00")
-position = Vector2(1436, 125)
-scale = Vector2(0.1, 0.1)
-texture = ExtResource("2_6eyxm")
-
 [node name="Alpha" type="Sprite2D" parent="Purple Textures"]
 material = ExtResource("10_4ne68")
 position = Vector2(1233, 126)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_6eyxm")
+
+[node name="Alpha Strength" type="Sprite2D" parent="Purple Textures"]
+material = ExtResource("10_r5t00")
+position = Vector2(1436, 125)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("2_6eyxm")
