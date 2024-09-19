@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://dwv20kcmbwh7j"]
+[gd_scene load_steps=23 format=3 uid="uid://dwv20kcmbwh7j"]
 
 [ext_resource type="Material" uid="uid://bphqrug31a4e6" path="res://Material/Canvas Item/Basic/Pink.tres" id="1_iw6wj"]
 [ext_resource type="Texture2D" uid="uid://oee6ijf862mm" path="res://Texture/Texture 2.png" id="2_6eyxm"]
@@ -20,11 +20,12 @@
 [ext_resource type="Material" uid="uid://c66pidx80i2pp" path="res://Material/Canvas Item/Greens/Green Alpha.tres" id="15_836oh"]
 [ext_resource type="Texture2D" uid="uid://bq3h87boxhkw3" path="res://Texture/Green with Colour.png" id="15_pj0qw"]
 [ext_resource type="Material" uid="uid://77dhbnjiw31l" path="res://Material/Canvas Item/Motion/Sway.tres" id="16_ycft3"]
+[ext_resource type="Material" uid="uid://b85u2diamg8hy" path="res://Material/Spatial/Plane/Cos Sin Terrain.tres" id="21_eapdq"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_ronnu"]
 size = Vector2(10, 10)
-subdivide_width = 32
-subdivide_depth = 32
+subdivide_width = 64
+subdivide_depth = 64
 
 [node name="2D Shader Scene" type="Node2D"]
 
@@ -193,4 +194,5 @@ texture = ExtResource("15_pj0qw")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.05433, 0, 0)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="3D Shader Scene"]
+material_override = ExtResource("21_eapdq")
 mesh = SubResource("PlaneMesh_ronnu")

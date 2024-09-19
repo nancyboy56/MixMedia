@@ -10,7 +10,7 @@ uniform float yOffset: hint_range(-100,100) =0;
 
 void vertex() {
 	// Called for every vertex the material is visible on.
-	VERTEX += vec2(cos(TIME * xWaveSpeed )*xWaveAmount*TAU + xOffset, sin(TIME * yWaveSpped)*yWaveAmount *TAU + yOffset);
+	VERTEX += vec2(cos(TIME * xWaveSpeed *TAU )*xWaveAmount + xOffset, sin(TIME * yWaveSpped *TAU)*yWaveAmount  + yOffset);
 }
 
 void fragment() {
