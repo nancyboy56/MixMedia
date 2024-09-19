@@ -8,11 +8,11 @@ void vertex() {
 
 void fragment() {
 	// Called for every pixel the material is visible on.
-	
+
 	// just read from texture
 	COLOR = texture(TEXTURE, UV);
 	COLOR.b = blue;
-	
+
 }
 
 //void light() {

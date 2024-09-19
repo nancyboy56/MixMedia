@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://dwv20kcmbwh7j"]
+[gd_scene load_steps=27 format=3 uid="uid://dwv20kcmbwh7j"]
 
 [ext_resource type="Material" uid="uid://bphqrug31a4e6" path="res://Material/Canvas Item/Basic/Pink.tres" id="1_iw6wj"]
 [ext_resource type="Texture2D" uid="uid://oee6ijf862mm" path="res://Texture/Texture 2.png" id="2_6eyxm"]
@@ -21,8 +21,20 @@
 [ext_resource type="Texture2D" uid="uid://bq3h87boxhkw3" path="res://Texture/Green with Colour.png" id="15_pj0qw"]
 [ext_resource type="Material" uid="uid://77dhbnjiw31l" path="res://Material/Canvas Item/Motion/Sway.tres" id="16_ycft3"]
 [ext_resource type="Material" uid="uid://b85u2diamg8hy" path="res://Material/Spatial/Plane/Cos Sin Terrain.tres" id="21_eapdq"]
+[ext_resource type="Material" uid="uid://e3k31pxp2bmq" path="res://Material/Spatial/Plane/Big Waves.tres" id="22_u1esb"]
+[ext_resource type="Material" uid="uid://cnel1tr80u47f" path="res://Material/Spatial/Plane/Noise.tres" id="23_u0nh4"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_ronnu"]
+size = Vector2(10, 10)
+subdivide_width = 64
+subdivide_depth = 64
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_e0tes"]
+size = Vector2(10, 10)
+subdivide_width = 32
+subdivide_depth = 32
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_8s7rd"]
 size = Vector2(10, 10)
 subdivide_width = 64
 subdivide_depth = 64
@@ -193,6 +205,16 @@ texture = ExtResource("15_pj0qw")
 [node name="3D Shader Scene" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.05433, 0, 0)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="3D Shader Scene"]
+[node name="CosSin Terrain" type="MeshInstance3D" parent="3D Shader Scene"]
 material_override = ExtResource("21_eapdq")
 mesh = SubResource("PlaneMesh_ronnu")
+
+[node name="Big Wave" type="MeshInstance3D" parent="3D Shader Scene"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.7055, -0.110199, 0.0993004)
+material_override = ExtResource("22_u1esb")
+mesh = SubResource("PlaneMesh_e0tes")
+
+[node name="Noise" type="MeshInstance3D" parent="3D Shader Scene"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.0805, -0.110199, -0.319708)
+material_override = ExtResource("23_u0nh4")
+mesh = SubResource("PlaneMesh_8s7rd")

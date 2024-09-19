@@ -1,13 +1,17 @@
 shader_type spatial;
-uniform float xFrequencey: hint_range(0, 2) =1;
-uniform float zFrequency: hint_range(0, 2) =1;
-uniform float height: hint_range(-5, 5) =1;
+
+uniform sampler2D noise;
+uniform float scale: hint_range(0.0, 100) =4;
+
+
 
 #define TAU 6.283185307179586476925287
 
 void vertex() {
-	// Called for every vertex the material is visible on.
-	VERTEX.y += cos(VERTEX.x * xFrequencey* TAU) *height *sin(VERTEX.z *TAU* zFrequency);
+	// bc the planemesh have coordinates that are in the range [-1,1] ?
+	// so we need to normalise, really remap to a range of -1 to 1
+	float height = texture(noise, (VERTEX.xz/2.0 + 0.5)/ scale ).x;
+  	VERTEX.y += height;
 
 }
 

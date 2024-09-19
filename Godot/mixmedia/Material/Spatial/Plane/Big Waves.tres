@@ -1,10 +1,10 @@
 [gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://e3k31pxp2bmq"]
 
-[ext_resource type="Shader" path="res://Shader/Spatial/Terrain/Cos Sin Terrain.gdshader" id="1_1e61b"]
+[ext_resource type="Shader" path="res://Shader/Spatial/Terrain/Cos Sin Terrain.gdshader" id="1_hx5hr"]
 
 [resource]
 render_priority = 0
-shader = ExtResource("1_1e61b")
-shader_parameter/xFrequencey = 0.257
-shader_parameter/zFrequency = 0.201
-shader_parameter/height = -0.98
+shader = ExtResource("1_hx5hr")
+shader_parameter/xFrequencey = 0.2
+shader_parameter/zFrequency = 0.346
+shader_parameter/height = 1.592
