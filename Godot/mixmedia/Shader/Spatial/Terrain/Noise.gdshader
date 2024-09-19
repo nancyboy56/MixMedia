@@ -10,13 +10,15 @@ uniform float scale: hint_range(0.0, 100) =4;
 void vertex() {
 	// bc the planemesh have coordinates that are in the range [-1,1] ?
 	// so we need to normalise, really remap to a range of -1 to 1
-	float height = texture(noise, (VERTEX.xz/2.0 + 0.5)/ scale ).x;
-  	VERTEX.y += height;
+	VERTEX.y += texture(noise, (VERTEX.xz/2.0 + 0.5)/ scale ).x;
+  	 
 
 }
 
 void fragment() {
 	// Called for every pixel the material is visible on.
+	
+	//COLOR.r = 0.2;
 }
 
 //void light() {
