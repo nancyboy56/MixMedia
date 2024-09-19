@@ -1,6 +1,6 @@
 [gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://4pymk12rasuk"]
 
-[ext_resource type="Shader" path="res://Shader/Green Screens/Analog Green Screen.gdshader" id="1_n3tou"]
+[ext_resource type="Shader" path="res://Shader/Canvas Item/Green Screens/Analog Green Screen.gdshader" id="1_n3tou"]
 
 [resource]
 shader = ExtResource("1_n3tou")

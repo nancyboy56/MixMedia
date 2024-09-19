@@ -1,6 +1,6 @@
 [gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://dlgvujdpurwr8"]
 
-[ext_resource type="Shader" path="res://Shader/Motion/Circle.gdshader" id="1_dew7e"]
+[ext_resource type="Shader" path="res://Shader/Canvas Item/Motion/Circle.gdshader" id="1_dew7e"]
 
 [resource]
 shader = ExtResource("1_dew7e")

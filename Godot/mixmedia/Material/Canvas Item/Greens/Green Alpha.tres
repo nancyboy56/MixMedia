@@ -1,6 +1,6 @@
 [gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://c66pidx80i2pp"]
 
-[ext_resource type="Shader" path="res://Shader/Green Screens/Green Alpha.gdshader" id="1_pl4dk"]
+[ext_resource type="Shader" path="res://Shader/Canvas Item/Green Screens/Green Alpha.gdshader" id="1_pl4dk"]
 
 [resource]
 shader = ExtResource("1_pl4dk")

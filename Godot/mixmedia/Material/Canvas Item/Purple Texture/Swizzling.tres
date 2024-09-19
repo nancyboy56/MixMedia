@@ -1,6 +1,6 @@
 [gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://cax5l7al07g3h"]
 
-[ext_resource type="Shader" path="res://Shader/Purple Shader/Swizzling.gdshader" id="1_xvltv"]
+[ext_resource type="Shader" path="res://Shader/Canvas Item/Purple Shader/Swizzling.gdshader" id="1_xvltv"]
 
 [resource]
 shader = ExtResource("1_xvltv")

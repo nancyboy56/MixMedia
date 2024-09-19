@@ -1,27 +1,32 @@
-[gd_scene load_steps=21 format=3 uid="uid://dwv20kcmbwh7j"]
+[gd_scene load_steps=22 format=3 uid="uid://dwv20kcmbwh7j"]
 
-[ext_resource type="Material" uid="uid://bphqrug31a4e6" path="res://Material/Basic/Pink.tres" id="1_iw6wj"]
+[ext_resource type="Material" uid="uid://bphqrug31a4e6" path="res://Material/Canvas Item/Basic/Pink.tres" id="1_iw6wj"]
 [ext_resource type="Texture2D" uid="uid://oee6ijf862mm" path="res://Texture/Texture 2.png" id="2_6eyxm"]
 [ext_resource type="Texture2D" uid="uid://cjf834wmd0o5p" path="res://Texture/icon.svg" id="2_fy5fm"]
-[ext_resource type="Material" uid="uid://bdh5k4mif4cwn" path="res://Material/Basic/UV.tres" id="3_7346a"]
-[ext_resource type="Material" uid="uid://b1po4jl2mopb0" path="res://Material/Basic/UV Blue.tres" id="4_u3t00"]
-[ext_resource type="Material" uid="uid://dtf2ogoriifh3" path="res://Material/Purple Texture/Texture.tres" id="5_dwj7n"]
+[ext_resource type="Material" uid="uid://bdh5k4mif4cwn" path="res://Material/Canvas Item/Basic/UV.tres" id="3_7346a"]
+[ext_resource type="Material" uid="uid://b1po4jl2mopb0" path="res://Material/Canvas Item/Basic/UV Blue.tres" id="4_u3t00"]
+[ext_resource type="Material" uid="uid://dtf2ogoriifh3" path="res://Material/Canvas Item/Purple Texture/Texture.tres" id="5_dwj7n"]
 [ext_resource type="Texture2D" uid="uid://p8rlcqf6b5ys" path="res://Texture/Texture 1.png" id="5_i2y1h"]
-[ext_resource type="Material" uid="uid://bsh4gq24lx0cy" path="res://Material/Basic/Off White.tres" id="5_jpqjk"]
-[ext_resource type="Material" uid="uid://begjtxde2akdp" path="res://Material/Purple Texture/Texture Blue.tres" id="7_8kts3"]
-[ext_resource type="Material" uid="uid://dbauikgpyw0y2" path="res://Material/Purple Texture/Monochrome.tres" id="8_7t2rh"]
-[ext_resource type="Material" uid="uid://bnpa7tkn3cm6s" path="res://Material/Purple Texture/Discard.tres" id="9_o7ah0"]
-[ext_resource type="Material" uid="uid://i0uw5u1k7wbp" path="res://Material/Purple Texture/Alpha.tres" id="10_4ne68"]
-[ext_resource type="Material" uid="uid://t7fg632onkra" path="res://Material/Purple Texture/Alpha Strength.tres" id="10_r5t00"]
+[ext_resource type="Material" uid="uid://bsh4gq24lx0cy" path="res://Material/Canvas Item/Basic/Off White.tres" id="5_jpqjk"]
+[ext_resource type="Material" uid="uid://begjtxde2akdp" path="res://Material/Canvas Item/Purple Texture/Texture Blue.tres" id="7_8kts3"]
+[ext_resource type="Material" uid="uid://dbauikgpyw0y2" path="res://Material/Canvas Item/Purple Texture/Monochrome.tres" id="8_7t2rh"]
+[ext_resource type="Material" uid="uid://bnpa7tkn3cm6s" path="res://Material/Canvas Item/Purple Texture/Discard.tres" id="9_o7ah0"]
+[ext_resource type="Material" uid="uid://i0uw5u1k7wbp" path="res://Material/Canvas Item/Purple Texture/Alpha.tres" id="10_4ne68"]
+[ext_resource type="Material" uid="uid://t7fg632onkra" path="res://Material/Canvas Item/Purple Texture/Alpha Strength.tres" id="10_r5t00"]
 [ext_resource type="Texture2D" uid="uid://cwo8biqdewrwd" path="res://Texture/Green 1.png" id="13_65teo"]
-[ext_resource type="Material" uid="uid://cax5l7al07g3h" path="res://Material/Purple Texture/Swizzling.tres" id="13_lb625"]
-[ext_resource type="Material" uid="uid://4pymk12rasuk" path="res://Material/Greens/Analog Greenscreen.tres" id="14_bytei"]
-[ext_resource type="Material" uid="uid://dlgvujdpurwr8" path="res://Material/Motion/Circle.tres" id="14_li06l"]
-[ext_resource type="Material" uid="uid://c66pidx80i2pp" path="res://Material/Greens/Green Alpha.tres" id="15_836oh"]
+[ext_resource type="Material" uid="uid://cax5l7al07g3h" path="res://Material/Canvas Item/Purple Texture/Swizzling.tres" id="13_lb625"]
+[ext_resource type="Material" uid="uid://4pymk12rasuk" path="res://Material/Canvas Item/Greens/Analog Greenscreen.tres" id="14_bytei"]
+[ext_resource type="Material" uid="uid://dlgvujdpurwr8" path="res://Material/Canvas Item/Motion/Circle.tres" id="14_li06l"]
+[ext_resource type="Material" uid="uid://c66pidx80i2pp" path="res://Material/Canvas Item/Greens/Green Alpha.tres" id="15_836oh"]
 [ext_resource type="Texture2D" uid="uid://bq3h87boxhkw3" path="res://Texture/Green with Colour.png" id="15_pj0qw"]
-[ext_resource type="Material" uid="uid://77dhbnjiw31l" path="res://Material/Motion/Sway.tres" id="16_ycft3"]
+[ext_resource type="Material" uid="uid://77dhbnjiw31l" path="res://Material/Canvas Item/Motion/Sway.tres" id="16_ycft3"]
 
-[node name="Shader Scene" type="Node2D"]
+[sub_resource type="PlaneMesh" id="PlaneMesh_ronnu"]
+size = Vector2(10, 10)
+subdivide_width = 32
+subdivide_depth = 32
+
+[node name="2D Shader Scene" type="Node2D"]
 
 [node name="Basic Shaders" type="Node2D" parent="."]
 
@@ -183,3 +188,9 @@ material = ExtResource("15_836oh")
 position = Vector2(742, 579)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("15_pj0qw")
+
+[node name="3D Shader Scene" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.05433, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="3D Shader Scene"]
+mesh = SubResource("PlaneMesh_ronnu")
