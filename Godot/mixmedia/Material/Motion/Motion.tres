@@ -1,8 +1,0 @@
-[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://dlgvujdpurwr8"]
-
-[ext_resource type="Shader" path="res://Shader/Motion/Cos Wave.gdshader" id="1_dew7e"]
-
-[resource]
-shader = ExtResource("1_dew7e")
-shader_parameter/circle = 38.097
-shader_parameter/scale = 0.526

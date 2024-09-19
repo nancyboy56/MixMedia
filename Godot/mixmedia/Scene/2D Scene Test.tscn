@@ -15,7 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://cwo8biqdewrwd" path="res://Texture/Green 1.png" id="13_65teo"]
 [ext_resource type="Material" uid="uid://cax5l7al07g3h" path="res://Material/Purple Texture/Swizzling.tres" id="13_lb625"]
 [ext_resource type="Material" uid="uid://4pymk12rasuk" path="res://Material/Greens/Analog Greenscreen.tres" id="14_bytei"]
-[ext_resource type="Material" uid="uid://dlgvujdpurwr8" path="res://Material/Motion/Motion.tres" id="14_li06l"]
+[ext_resource type="Material" uid="uid://dlgvujdpurwr8" path="res://Material/Motion/Circle.tres" id="14_li06l"]
 [ext_resource type="Material" uid="uid://c66pidx80i2pp" path="res://Material/Greens/Green Alpha.tres" id="15_836oh"]
 [ext_resource type="Texture2D" uid="uid://bq3h87boxhkw3" path="res://Texture/Green with Colour.png" id="15_pj0qw"]
 
@@ -120,7 +120,7 @@ rotation = 2.11496
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("2_6eyxm")
 
-[node name="teal texture2" type="Sprite2D" parent="Purple Textures"]
+[node name="Circle" type="Sprite2D" parent="Purple Textures"]
 material = ExtResource("14_li06l")
 position = Vector2(2091, 125)
 scale = Vector2(0.1, 0.1)
