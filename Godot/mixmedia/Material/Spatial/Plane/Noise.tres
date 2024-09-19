@@ -1,0 +1,10 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://cnel1tr80u47f"]
+
+[ext_resource type="Shader" path="res://Shader/Spatial/Terrain/Cos Sin Terrain.gdshader" id="1_aaxas"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_aaxas")
+shader_parameter/xFrequencey = 0.257
+shader_parameter/zFrequency = 0.201
+shader_parameter/height = -0.98
