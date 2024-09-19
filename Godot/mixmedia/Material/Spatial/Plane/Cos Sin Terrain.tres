@@ -1,6 +1,6 @@
 [gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://b85u2diamg8hy"]
 
-[ext_resource type="Shader" path="res://Shader/Spatial/Cos Sin Terrain.gdshader" id="1_86ibj"]
+[ext_resource type="Shader" path="res://Shader/Spatial/Terrain/Cos Sin Terrain.gdshader" id="1_86ibj"]
 
 [resource]
 render_priority = 0
