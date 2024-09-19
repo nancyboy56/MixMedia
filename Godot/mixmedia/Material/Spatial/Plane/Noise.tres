@@ -1,7 +1,17 @@
-[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://cnel1tr80u47f"]
+[gd_resource type="ShaderMaterial" load_steps=4 format=3 uid="uid://cnel1tr80u47f"]
 
 [ext_resource type="Shader" path="res://Shader/Spatial/Terrain/Noise.gdshader" id="1_j1um2"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_5x84c"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_mr22h"]
+width = 2048
+height = 2048
+seamless = true
+noise = SubResource("FastNoiseLite_5x84c")
 
 [resource]
 render_priority = 0
 shader = ExtResource("1_j1um2")
+shader_parameter/scale = 19.139
+shader_parameter/noise = SubResource("NoiseTexture2D_mr22h")

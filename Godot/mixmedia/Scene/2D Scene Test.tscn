@@ -220,4 +220,4 @@ material_override = ExtResource("23_u0nh4")
 mesh = SubResource("PlaneMesh_8s7rd")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38.4168, 0, -1.46259)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38.3931, 0.0334129, -1.50006)
