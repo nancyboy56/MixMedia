@@ -1,0 +1,12 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://77dhbnjiw31l"]
+
+[ext_resource type="Shader" path="res://Shader/Motion/Sway.gdshader" id="1_6ieb6"]
+
+[resource]
+shader = ExtResource("1_6ieb6")
+shader_parameter/xWaveAmount = 225.714
+shader_parameter/xWaveSpeed = -1.118
+shader_parameter/yWaveAmount = 94.286
+shader_parameter/yWaveSpped = -3.381
+shader_parameter/xOffset = 20.492
+shader_parameter/yOffset = -40.0

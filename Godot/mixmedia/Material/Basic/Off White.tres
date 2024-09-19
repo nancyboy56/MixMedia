@@ -4,4 +4,4 @@
 
 [resource]
 shader = ExtResource("1_6frlt")
-shader_parameter/colour = Vector4(1, 0.9, 0.9, 1)
+shader_parameter/colour = Color(1, 1, 1, 1)

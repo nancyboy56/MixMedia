@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://dwv20kcmbwh7j"]
+[gd_scene load_steps=21 format=3 uid="uid://dwv20kcmbwh7j"]
 
 [ext_resource type="Material" uid="uid://bphqrug31a4e6" path="res://Material/Basic/Pink.tres" id="1_iw6wj"]
 [ext_resource type="Texture2D" uid="uid://oee6ijf862mm" path="res://Texture/Texture 2.png" id="2_6eyxm"]
@@ -6,6 +6,7 @@
 [ext_resource type="Material" uid="uid://bdh5k4mif4cwn" path="res://Material/Basic/UV.tres" id="3_7346a"]
 [ext_resource type="Material" uid="uid://b1po4jl2mopb0" path="res://Material/Basic/UV Blue.tres" id="4_u3t00"]
 [ext_resource type="Material" uid="uid://dtf2ogoriifh3" path="res://Material/Purple Texture/Texture.tres" id="5_dwj7n"]
+[ext_resource type="Texture2D" uid="uid://p8rlcqf6b5ys" path="res://Texture/Texture 1.png" id="5_i2y1h"]
 [ext_resource type="Material" uid="uid://bsh4gq24lx0cy" path="res://Material/Basic/Off White.tres" id="5_jpqjk"]
 [ext_resource type="Material" uid="uid://begjtxde2akdp" path="res://Material/Purple Texture/Texture Blue.tres" id="7_8kts3"]
 [ext_resource type="Material" uid="uid://dbauikgpyw0y2" path="res://Material/Purple Texture/Monochrome.tres" id="8_7t2rh"]
@@ -18,6 +19,7 @@
 [ext_resource type="Material" uid="uid://dlgvujdpurwr8" path="res://Material/Motion/Circle.tres" id="14_li06l"]
 [ext_resource type="Material" uid="uid://c66pidx80i2pp" path="res://Material/Greens/Green Alpha.tres" id="15_836oh"]
 [ext_resource type="Texture2D" uid="uid://bq3h87boxhkw3" path="res://Texture/Green with Colour.png" id="15_pj0qw"]
+[ext_resource type="Material" uid="uid://77dhbnjiw31l" path="res://Material/Motion/Sway.tres" id="16_ycft3"]
 
 [node name="Shader Scene" type="Node2D"]
 
@@ -37,6 +39,11 @@ texture = ExtResource("2_fy5fm")
 material = ExtResource("4_u3t00")
 position = Vector2(369, 72)
 texture = ExtResource("2_fy5fm")
+
+[node name="Texture1" type="Sprite2D" parent="Basic Shaders"]
+position = Vector2(126, 860)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("5_i2y1h")
 
 [node name="Backgrounds" type="Node2D" parent="."]
 
@@ -123,6 +130,12 @@ texture = ExtResource("2_6eyxm")
 [node name="Circle" type="Sprite2D" parent="Purple Textures"]
 material = ExtResource("14_li06l")
 position = Vector2(2091, 125)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_6eyxm")
+
+[node name="Circle2" type="Sprite2D" parent="Purple Textures"]
+material = ExtResource("16_ycft3")
+position = Vector2(2356, 119)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("2_6eyxm")
 

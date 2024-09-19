@@ -4,5 +4,4 @@
 
 [resource]
 shader = ExtResource("1_mocsr")
-shader_parameter/blue = 1.0
 shader_parameter/threshold = 0.875

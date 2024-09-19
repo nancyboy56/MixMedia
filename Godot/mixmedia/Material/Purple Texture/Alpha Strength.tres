@@ -4,3 +4,4 @@
 
 [resource]
 shader = ExtResource("1_smvvg")
+shader_parameter/strength = 1.0
