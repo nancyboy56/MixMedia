@@ -219,5 +219,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.0805, -0.110199, -0.319708
 material_override = ExtResource("23_u0nh4")
 mesh = SubResource("PlaneMesh_8s7rd")
 
-[node name="OmniLight3D" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38.3931, 0.0334129, -1.50006)
+[node name="OmniLight3D" type="OmniLight3D" parent="3D Shader Scene"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.7299, 0.0334129, -1.50006)
+omni_range = 5.61
+omni_attenuation = 2.148
