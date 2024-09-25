@@ -5,6 +5,6 @@
 [resource]
 render_priority = 0
 shader = ExtResource("1_hx5hr")
-shader_parameter/xFrequencey = 0.2
-shader_parameter/zFrequency = 0.346
-shader_parameter/height = 1.592
+shader_parameter/xFrequencey = 0.411
+shader_parameter/zFrequency = 0.528
+shader_parameter/height = 0.432
